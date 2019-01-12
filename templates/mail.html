@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email</title>
+</head>
+<body>
+<h2>hello {{ request.form['email'] }}</h2>
+<form action="/" method="POST">
+    <input name="email">
+    <input type="submit">
+</form>
+<h2>hello {{ request.form['email'] }}</h2>
+{#<h2>hello {{ request.form['mail'] }}, 'what do you want' </h2>#}
+</body>
+</html>
